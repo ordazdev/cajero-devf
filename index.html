@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Iniciar Sesión</title>
+</head>
+<body>
+  <div class="wallet-setup-container">
+    <h1>Cajero Automático</h1>
+    <label for="cuenta">Seleccionar Cuenta</label>
+    <select id="cuenta" class="input-common">
+      <option value="neil">neil</option>
+      <option value="buzz">buzz</option>
+      <option value="yuri">yuri</option>
+    </select>
+    <label for="password">Contraseña</label>
+    <input type="password" class="input-common" id="password" name="password">
+    <button id="botonIngresar" onclick="iniciarSesion()">Iniciar Sesión</button>
+    <p id="error" style="color: red"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

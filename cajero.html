@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CAJERO</title>
+  </head>
+  <body>
+    <div class="wallet-setup-container">
+      <h1 id="saludo"></h1>
+      <button id="btnConsultar">Consultar saldo</button>
+      <button id="btnDepositar" onclick="mostrarCampoIngreso()">
+        Ingresar monto
+      </button>
+      <button id="btnRetirar" onclick="mostrarCampoRetiro()">
+        Retirar monto
+      </button>
+      <button id="btnCerrarSesion">Cerrar sesión</button>
+
+      <div id="campoIngreso" style="display: none">
+        <label for="montoIngreso">Monto a ingresar</label>
+        <input type="number" id="montoIngreso" class="input-common" />
+        <button onclick="depositarMonto()">Ingresar</button>
+      </div>
+
+      <div id="campoRetiro" style="display: none">
+        <label for="montoRetiro">Monto a retirar</label>
+        <input type="number" id="montoRetiro" class="input-common" />
+        <button onclick="retirarMonto()">Retirar</button>
+      </div>
+      <p id="mensaje"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

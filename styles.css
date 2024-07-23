@@ -1,0 +1,93 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #3c3984;
+  background-image: url('images/astronauta.jpg');
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.wallet-setup-container {
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.input-common {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.wallet-setup-container button {
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+}
+
+
+.wallet-setup-container button:last-child {
+  margin-right: 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2563EB;
+}
+
+#campoIngreso, #campoRetiro {
+  display: none;
+  margin-top: 20px;
+}
+
+#campoIngreso input, #campoRetiro input {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+#error {
+  color: red;
+}
+
+#alerta, #alertaSaldo, #alertaTransaccion {
+  color: red;
+  font-size: 14px;
+}
